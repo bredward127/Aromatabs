@@ -1,0 +1,785 @@
+{
+  "brand": "Aromatabs",
+  "assets": [
+    {
+      "file": "CONTACT-SHEET.png",
+      "type": "png",
+      "pixels": "1902x5964",
+      "note": ""
+    },
+    {
+      "file": "SUPERPROMPT.md",
+      "type": "md",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "brand/BRAND-GUIDE.md",
+      "type": "md",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "brand/logo-usage-sheet.png",
+      "type": "png",
+      "pixels": "1680x1180",
+      "note": ""
+    },
+    {
+      "file": "brand/logo-usage-sheet.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "brand/palette-sheet.png",
+      "type": "png",
+      "pixels": "1680x1180",
+      "note": ""
+    },
+    {
+      "file": "brand/palette-sheet.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "brand/tailwind.theme.cjs",
+      "type": "cjs",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "brand/tokens.css",
+      "type": "css",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "brand/tokens.json",
+      "type": "json",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "brand/typography-sheet.png",
+      "type": "png",
+      "pixels": "1680x1180",
+      "note": ""
+    },
+    {
+      "file": "brand/typography-sheet.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "favicon/android-chrome-192.png",
+      "type": "png",
+      "pixels": "192x192",
+      "note": ""
+    },
+    {
+      "file": "favicon/android-chrome-512.png",
+      "type": "png",
+      "pixels": "512x512",
+      "note": ""
+    },
+    {
+      "file": "favicon/apple-touch-icon-180.png",
+      "type": "png",
+      "pixels": "180x180",
+      "note": ""
+    },
+    {
+      "file": "favicon/favicon-16.png",
+      "type": "png",
+      "pixels": "16x16",
+      "note": ""
+    },
+    {
+      "file": "favicon/favicon-32.png",
+      "type": "png",
+      "pixels": "32x32",
+      "note": ""
+    },
+    {
+      "file": "favicon/favicon-48.png",
+      "type": "png",
+      "pixels": "48x48",
+      "note": ""
+    },
+    {
+      "file": "favicon/favicon-64.png",
+      "type": "png",
+      "pixels": "64x64",
+      "note": ""
+    },
+    {
+      "file": "favicon/favicon-96.png",
+      "type": "png",
+      "pixels": "96x96",
+      "note": ""
+    },
+    {
+      "file": "favicon/favicon-rounded.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "favicon/favicon.ico",
+      "type": "ico",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "favicon/favicon.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "favicon/maskable-icon-512.png",
+      "type": "png",
+      "pixels": "512x512",
+      "note": ""
+    },
+    {
+      "file": "favicon/safari-pinned-tab.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "fonts/LICENSE-SourceSansPro.txt",
+      "type": "txt",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "fonts/LICENSE-SourceSerifPro.txt",
+      "type": "txt",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "fonts/SourceSansPro-Bold.otf",
+      "type": "otf",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "fonts/SourceSansPro-Light.otf",
+      "type": "otf",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "fonts/SourceSansPro-Regular.otf",
+      "type": "otf",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "fonts/SourceSansPro-Semibold.otf",
+      "type": "otf",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "fonts/SourceSerifPro-Bold.otf",
+      "type": "otf",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "fonts/SourceSerifPro-It.otf",
+      "type": "otf",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "fonts/SourceSerifPro-Regular.otf",
+      "type": "otf",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "fonts/SourceSerifPro-Semibold.otf",
+      "type": "otf",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "logo/aromatabs-logo-horizontal-color.png",
+      "type": "png",
+      "pixels": "1200x233",
+      "note": ""
+    },
+    {
+      "file": "logo/aromatabs-logo-horizontal-color.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "logo/aromatabs-logo-horizontal-mono-ink.png",
+      "type": "png",
+      "pixels": "1200x233",
+      "note": ""
+    },
+    {
+      "file": "logo/aromatabs-logo-horizontal-mono-ink.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "logo/aromatabs-logo-horizontal-mono-white.png",
+      "type": "png",
+      "pixels": "1200x233",
+      "note": ""
+    },
+    {
+      "file": "logo/aromatabs-logo-horizontal-mono-white.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "logo/aromatabs-logo-horizontal-reverse.png",
+      "type": "png",
+      "pixels": "1200x233",
+      "note": ""
+    },
+    {
+      "file": "logo/aromatabs-logo-horizontal-reverse.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "logo/aromatabs-logo-lockup-color.png",
+      "type": "png",
+      "pixels": "1400x272",
+      "note": ""
+    },
+    {
+      "file": "logo/aromatabs-logo-lockup-color.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "logo/aromatabs-logo-lockup-mono-ink.png",
+      "type": "png",
+      "pixels": "1400x272",
+      "note": ""
+    },
+    {
+      "file": "logo/aromatabs-logo-lockup-mono-ink.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "logo/aromatabs-logo-lockup-mono-white.png",
+      "type": "png",
+      "pixels": "1400x272",
+      "note": ""
+    },
+    {
+      "file": "logo/aromatabs-logo-lockup-mono-white.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "logo/aromatabs-logo-lockup-reverse.png",
+      "type": "png",
+      "pixels": "1400x272",
+      "note": ""
+    },
+    {
+      "file": "logo/aromatabs-logo-lockup-reverse.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "logo/aromatabs-logo-stacked-color.png",
+      "type": "png",
+      "pixels": "900x666",
+      "note": ""
+    },
+    {
+      "file": "logo/aromatabs-logo-stacked-color.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "logo/aromatabs-logo-stacked-mono-ink.png",
+      "type": "png",
+      "pixels": "900x666",
+      "note": ""
+    },
+    {
+      "file": "logo/aromatabs-logo-stacked-mono-ink.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "logo/aromatabs-logo-stacked-mono-white.png",
+      "type": "png",
+      "pixels": "900x666",
+      "note": ""
+    },
+    {
+      "file": "logo/aromatabs-logo-stacked-mono-white.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "logo/aromatabs-logo-stacked-reverse.png",
+      "type": "png",
+      "pixels": "900x666",
+      "note": ""
+    },
+    {
+      "file": "logo/aromatabs-logo-stacked-reverse.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "logo/aromatabs-mark-color.png",
+      "type": "png",
+      "pixels": "1024x1024",
+      "note": ""
+    },
+    {
+      "file": "logo/aromatabs-mark-color.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "logo/aromatabs-mark-mono-ink.png",
+      "type": "png",
+      "pixels": "1024x1024",
+      "note": ""
+    },
+    {
+      "file": "logo/aromatabs-mark-mono-ink.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "logo/aromatabs-mark-mono-white.png",
+      "type": "png",
+      "pixels": "1024x1024",
+      "note": ""
+    },
+    {
+      "file": "logo/aromatabs-mark-mono-white.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "logo/aromatabs-mark-reverse.png",
+      "type": "png",
+      "pixels": "1024x1024",
+      "note": ""
+    },
+    {
+      "file": "logo/aromatabs-mark-reverse.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "logo/aromatabs-wordmark-color.png",
+      "type": "png",
+      "pixels": "1200x186",
+      "note": ""
+    },
+    {
+      "file": "logo/aromatabs-wordmark-color.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "logo/aromatabs-wordmark-mono-ink.png",
+      "type": "png",
+      "pixels": "1200x186",
+      "note": ""
+    },
+    {
+      "file": "logo/aromatabs-wordmark-mono-ink.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "logo/aromatabs-wordmark-mono-white.png",
+      "type": "png",
+      "pixels": "1200x186",
+      "note": ""
+    },
+    {
+      "file": "logo/aromatabs-wordmark-mono-white.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "logo/aromatabs-wordmark-reverse.png",
+      "type": "png",
+      "pixels": "1200x186",
+      "note": ""
+    },
+    {
+      "file": "logo/aromatabs-wordmark-reverse.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "social/banners/email-header-1200x300.png",
+      "type": "png",
+      "pixels": "1200x300",
+      "note": "Newsletter masthead."
+    },
+    {
+      "file": "social/banners/email-header-1200x300.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": "Newsletter masthead."
+    },
+    {
+      "file": "social/banners/facebook-cover-1640x856.png",
+      "type": "png",
+      "pixels": "1640x856",
+      "note": "Facebook Page cover. Legible content held inside the 820x312 desktop crop."
+    },
+    {
+      "file": "social/banners/facebook-cover-1640x856.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": "Facebook Page cover. Legible content held inside the 820x312 desktop crop."
+    },
+    {
+      "file": "social/banners/facebook-cover-820x312.png",
+      "type": "png",
+      "pixels": "820x312",
+      "note": "Facebook classic cover."
+    },
+    {
+      "file": "social/banners/facebook-cover-820x312.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": "Facebook classic cover."
+    },
+    {
+      "file": "social/banners/linkedin-company-cover-1128x191.png",
+      "type": "png",
+      "pixels": "1128x191",
+      "note": "LinkedIn company page cover."
+    },
+    {
+      "file": "social/banners/linkedin-company-cover-1128x191.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": "LinkedIn company page cover."
+    },
+    {
+      "file": "social/banners/linkedin-personal-cover-1584x396.png",
+      "type": "png",
+      "pixels": "1584x396",
+      "note": "LinkedIn personal background. Photo overlays lower left."
+    },
+    {
+      "file": "social/banners/linkedin-personal-cover-1584x396.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": "LinkedIn personal background. Photo overlays lower left."
+    },
+    {
+      "file": "social/banners/pinterest-cover-1440x810.png",
+      "type": "png",
+      "pixels": "1440x810",
+      "note": "Pinterest profile cover."
+    },
+    {
+      "file": "social/banners/pinterest-cover-1440x810.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": "Pinterest profile cover."
+    },
+    {
+      "file": "social/banners/x-header-1500x500.png",
+      "type": "png",
+      "pixels": "1500x500",
+      "note": "X / Twitter profile header. Avatar overlays lower left."
+    },
+    {
+      "file": "social/banners/x-header-1500x500.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": "X / Twitter profile header. Avatar overlays lower left."
+    },
+    {
+      "file": "social/banners/youtube-channel-art-2560x1440-safe-guide.png",
+      "type": "png",
+      "pixels": "1600x900",
+      "note": "Same, with the safe area marked. Reference only \u2014 do not upload."
+    },
+    {
+      "file": "social/banners/youtube-channel-art-2560x1440-safe-guide.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": "Same, with the safe area marked. Reference only \u2014 do not upload."
+    },
+    {
+      "file": "social/banners/youtube-channel-art-2560x1440.png",
+      "type": "png",
+      "pixels": "2560x1440",
+      "note": "YouTube channel art. All content inside the 1546x423 safe area."
+    },
+    {
+      "file": "social/banners/youtube-channel-art-2560x1440.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": "YouTube channel art. All content inside the 1546x423 safe area."
+    },
+    {
+      "file": "social/posts/COPY.md",
+      "type": "md",
+      "pixels": "",
+      "note": ""
+    },
+    {
+      "file": "social/posts/ig-carousel-cover-1080x1080.png",
+      "type": "png",
+      "pixels": "1080x1080",
+      "note": "Carousel slide 1 \u2014 the hook."
+    },
+    {
+      "file": "social/posts/ig-carousel-cover-1080x1080.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": "Carousel slide 1 \u2014 the hook."
+    },
+    {
+      "file": "social/posts/ig-carousel-end-1080x1080.png",
+      "type": "png",
+      "pixels": "1080x1080",
+      "note": "Carousel final slide \u2014 the call to action."
+    },
+    {
+      "file": "social/posts/ig-carousel-end-1080x1080.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": "Carousel final slide \u2014 the call to action."
+    },
+    {
+      "file": "social/posts/ig-carousel-slide-1080x1080.png",
+      "type": "png",
+      "pixels": "1080x1080",
+      "note": "Carousel body slide \u2014 numbered list."
+    },
+    {
+      "file": "social/posts/ig-carousel-slide-1080x1080.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": "Carousel body slide \u2014 numbered list."
+    },
+    {
+      "file": "social/posts/ig-carousel-stat-1080x1080.png",
+      "type": "png",
+      "pixels": "1080x1080",
+      "note": "Carousel stat slide."
+    },
+    {
+      "file": "social/posts/ig-carousel-stat-1080x1080.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": "Carousel stat slide."
+    },
+    {
+      "file": "social/posts/ig-portrait-1080x1350.png",
+      "type": "png",
+      "pixels": "1080x1350",
+      "note": "Instagram portrait feed post."
+    },
+    {
+      "file": "social/posts/ig-portrait-1080x1350.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": "Instagram portrait feed post."
+    },
+    {
+      "file": "social/posts/ig-square-article-1080x1080.png",
+      "type": "png",
+      "pixels": "1080x1080",
+      "note": "Instagram article card."
+    },
+    {
+      "file": "social/posts/ig-square-article-1080x1080.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": "Instagram article card."
+    },
+    {
+      "file": "social/posts/ig-square-quote-1080x1080.png",
+      "type": "png",
+      "pixels": "1080x1080",
+      "note": "Instagram quote card."
+    },
+    {
+      "file": "social/posts/ig-square-quote-1080x1080.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": "Instagram quote card."
+    },
+    {
+      "file": "social/posts/og-article-1200x630.png",
+      "type": "png",
+      "pixels": "1200x630",
+      "note": "Article Open Graph template."
+    },
+    {
+      "file": "social/posts/og-article-1200x630.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": "Article Open Graph template."
+    },
+    {
+      "file": "social/posts/og-default-1200x630.png",
+      "type": "png",
+      "pixels": "1200x630",
+      "note": "Sitewide default Open Graph image."
+    },
+    {
+      "file": "social/posts/og-default-1200x630.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": "Sitewide default Open Graph image."
+    },
+    {
+      "file": "social/posts/pinterest-pin-1000x1500.png",
+      "type": "png",
+      "pixels": "1000x1500",
+      "note": "Pinterest pin."
+    },
+    {
+      "file": "social/posts/pinterest-pin-1000x1500.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": "Pinterest pin."
+    },
+    {
+      "file": "social/posts/story-1080x1920-safe-guide.png",
+      "type": "png",
+      "pixels": "1080x1920",
+      "note": "Same, with UI safe zones marked. Reference only."
+    },
+    {
+      "file": "social/posts/story-1080x1920-safe-guide.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": "Same, with UI safe zones marked. Reference only."
+    },
+    {
+      "file": "social/posts/story-1080x1920.png",
+      "type": "png",
+      "pixels": "1080x1920",
+      "note": "Story / Reel cover."
+    },
+    {
+      "file": "social/posts/story-1080x1920.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": "Story / Reel cover."
+    },
+    {
+      "file": "social/posts/story-quote-1080x1920.png",
+      "type": "png",
+      "pixels": "1080x1920",
+      "note": "Story quote card."
+    },
+    {
+      "file": "social/posts/story-quote-1080x1920.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": "Story quote card."
+    },
+    {
+      "file": "social/posts/x-card-1200x675.png",
+      "type": "png",
+      "pixels": "1200x675",
+      "note": "X summary_large_image card."
+    },
+    {
+      "file": "social/posts/x-card-1200x675.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": "X summary_large_image card."
+    },
+    {
+      "file": "social/posts/youtube-thumbnail-1280x720.png",
+      "type": "png",
+      "pixels": "1280x720",
+      "note": "Video thumbnail template."
+    },
+    {
+      "file": "social/posts/youtube-thumbnail-1280x720.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": "Video thumbnail template."
+    },
+    {
+      "file": "social/profile/aromatabs-avatar-1000.png",
+      "type": "png",
+      "pixels": "1000x1000",
+      "note": ""
+    },
+    {
+      "file": "social/profile/aromatabs-avatar-400.png",
+      "type": "png",
+      "pixels": "400x400",
+      "note": ""
+    },
+    {
+      "file": "social/profile/aromatabs-avatar-800.png",
+      "type": "png",
+      "pixels": "800x800",
+      "note": ""
+    },
+    {
+      "file": "social/profile/aromatabs-avatar-circle-proof.png",
+      "type": "png",
+      "pixels": "1000x1000",
+      "note": ""
+    },
+    {
+      "file": "social/profile/aromatabs-avatar-light-1000.png",
+      "type": "png",
+      "pixels": "1000x1000",
+      "note": ""
+    },
+    {
+      "file": "social/profile/aromatabs-avatar.svg",
+      "type": "svg",
+      "pixels": "",
+      "note": ""
+    }
+  ]
+}
