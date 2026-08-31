@@ -34,7 +34,38 @@ Every asset is generated from vector source with all text converted to
 outlines, so nothing depends on a font being installed and the SVGs render
 identically everywhere.
 
-## Rebuilding
+## The site
+
+A Next.js App Router application lives alongside the kit. Prompt 1 of the
+super prompt is built: tokens, self-hosted type, layout primitives, the ripple
+motif, site chrome and the icon set.
+
+```bash
+npm install
+npm run dev            # http://localhost:3000
+npm run check:all      # typecheck, lint, format, production build
+```
+
+To verify the foundation end to end (three breakpoints x two themes, plus the
+theme cycle, focus order and the no-JavaScript fallback):
+
+```bash
+npm run build && npx next start -p 3111
+npm run check:layout
+```
+
+The design tokens the app consumes are generated, not hand-written:
+`app/styles/tokens.css`, `tailwind.theme.cjs` and
+`components/brand/mark-geometry.ts` all come from `build/`. Change
+`build/brand.py`, then:
+
+```bash
+npm run tokens && npm run fonts   # tokens + subset woff2 faces
+python3 build/make_mark_geometry.py
+python3 build/build_all.py        # the visual kit
+```
+
+## Rebuilding the visual kit
 
 ```bash
 pip install pillow cairosvg uharfbuzz fonttools

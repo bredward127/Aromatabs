@@ -1,0 +1,39 @@
+{
+  "name": "aromatabs",
+  "version": "0.1.0",
+  "private": true,
+  "description": "aromatabs.com - an authority site on everything rest and relaxation",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "fonts": "python3 build/make_webfonts.py",
+    "tokens": "python3 build/build_tokens.py",
+    "check:layout": "node scripts/check-layout.mjs",
+    "check:all": "npm run typecheck && npm run lint && npm run format:check && npm run build"
+  },
+  "dependencies": {
+    "next": "^15.5.24",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@types/node": "^26.4.0",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.5",
+    "autoprefixer": "^10.5.4",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^15.5.24",
+    "lighthouse": "^13.4.1",
+    "playwright": "^1.62.1",
+    "postcss": "^8.5.26",
+    "prettier": "^3.9.6",
+    "prettier-plugin-tailwindcss": "^0.8.1",
+    "tailwindcss": "^3.4.19",
+    "typescript": "^5.9.3"
+  }
+}

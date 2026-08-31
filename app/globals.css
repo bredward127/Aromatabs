@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* The mark's fills follow the theme. CSS custom properties can hold a
+     url() reference, so the gradient swaps without duplicating the SVG. */
+  :root {
+    color-scheme: light;
+    --at-ground-mark-tab: url(#at-tab);
+    --at-ground-mark-ink: var(--at-linen);
+    --mark-tab: var(--at-ground-mark-tab);
+    --mark-ink: var(--at-ground-mark-ink);
+    --at-focus: var(--at-link);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme='light']) {
+      color-scheme: dark;
+      --at-ground-mark-tab: url(#at-tab-reverse);
+      --at-ground-mark-ink: var(--at-deep);
+    }
+  }
+
+  [data-theme='dark'] {
+    color-scheme: dark;
+    --at-ground-mark-tab: url(#at-tab-reverse);
+    --at-ground-mark-ink: var(--at-deep);
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--at-bg);
+    color: var(--at-text);
+    font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+    font-size: var(--at-body-size);
+    line-height: var(--at-body-leading);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display), ui-serif, Georgia, serif;
+    font-weight: 600;
+    text-wrap: balance;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--at-focus);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  ::selection {
+    background-color: var(--at-mist);
+    color: var(--at-ink);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* A <Section tone> sets the semantic layer for its subtree, so anything
+     inside picks up the right foreground without being told which ground
+     it happens to be sitting on. */
+  /* `linen` and `cloud` are the two theme-following grounds: the page and
+     the raised surface. In dark mode they become ink and deep. `deep` and
+     `brand` are fixed accent bands - always dark, in either theme. */
+  .tone-linen {
+    --at-bg: var(--at-ground-page);
+    --at-surface: var(--at-ground-raised);
+    --at-text: var(--at-ground-text);
+    --at-text-muted: var(--at-ground-muted);
+    --at-link: var(--at-ground-link);
+    --at-border: var(--at-ground-border);
+    --mark-tab: var(--at-ground-mark-tab);
+    --mark-ink: var(--at-ground-mark-ink);
+  }
+
+  .tone-cloud {
+    --at-bg: var(--at-ground-raised);
+    --at-surface: var(--at-ground-page);
+    --at-text: var(--at-ground-text);
+    --at-text-muted: var(--at-ground-muted);
+    --at-link: var(--at-ground-link);
+    --at-border: var(--at-ground-border);
+    --mark-tab: var(--at-ground-mark-tab);
+    --mark-ink: var(--at-ground-mark-ink);
+  }
+
+  .tone-deep {
+    --at-bg: var(--at-deep);
+    --at-surface: var(--at-ink);
+    --at-text: var(--at-cloud);
+    --at-text-muted: color-mix(in srgb, var(--at-cloud) 72%, transparent);
+    --at-link: var(--at-brand300);
+    --at-border: color-mix(in srgb, var(--at-cloud) 16%, transparent);
+    --mark-tab: url(#at-tab-reverse);
+    --mark-ink: var(--at-deep);
+    color-scheme: dark;
+  }
+
+  .tone-brand {
+    --at-bg: var(--at-brand);
+    --at-surface: var(--at-brand600);
+    --at-text: var(--at-cloud);
+    --at-text-muted: color-mix(in srgb, var(--at-cloud) 78%, transparent);
+    --at-link: var(--at-cloud);
+    --at-border: color-mix(in srgb, var(--at-cloud) 24%, transparent);
+    --mark-tab: url(#at-tab-reverse);
+    --mark-ink: var(--at-brand);
+    color-scheme: dark;
+  }
+
+  /* The topic row scrolls sideways on narrow screens. The mask makes that
+     legible without a scrollbar; it is decorative, so the row stays fully
+     reachable by keyboard and by swipe either way. */
+  .nav-scroller {
+    scrollbar-width: none;
+    -webkit-mask-image: linear-gradient(to right, #000 88%, transparent 100%);
+    mask-image: linear-gradient(to right, #000 88%, transparent 100%);
+  }
+  .nav-scroller::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* The theme control shows one icon: whichever preference is in force.
+     Driven entirely by CSS so there is no hydration mismatch and no
+     first-paint flicker. */
+  .theme-face {
+    display: none;
+  }
+  .theme-face--system {
+    display: inline-flex;
+  }
+  [data-theme-pref='light'] .theme-face--system,
+  [data-theme-pref='dark'] .theme-face--system {
+    display: none;
+  }
+  [data-theme-pref='light'] .theme-face--light,
+  [data-theme-pref='dark'] .theme-face--dark {
+    display: inline-flex;
+  }
+}
+
+@layer utilities {
+  .measure {
+    max-width: 68ch;
+  }
+}
