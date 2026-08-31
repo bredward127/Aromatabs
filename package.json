@@ -14,12 +14,19 @@
     "fonts": "python3 build/make_webfonts.py",
     "tokens": "python3 build/build_tokens.py",
     "check:layout": "node scripts/check-layout.mjs",
-    "check:all": "npm run typecheck && npm run lint && npm run format:check && npm run build"
+    "check:all": "npm run typecheck && npm run lint && npm run format:check && npm run build",
+    "check:citations": "node scripts/check-citations.mjs",
+    "check:routes": "node scripts/check-routes.mjs"
   },
   "dependencies": {
+    "gray-matter": "^4.0.3",
     "next": "^15.5.24",
+    "next-mdx-remote": "^6.0.0",
     "react": "^19.2.8",
-    "react-dom": "^19.2.8"
+    "react-dom": "^19.2.8",
+    "remark-gfm": "^4.0.1",
+    "server-only": "^0.0.1",
+    "zod": "^4.5.4"
   },
   "devDependencies": {
     "@types/node": "^26.4.0",

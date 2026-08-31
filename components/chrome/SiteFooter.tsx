@@ -4,7 +4,6 @@ import { Lockup } from '@/components/brand/Lockup';
 import { RippleField } from '@/components/layout/RippleField';
 import { footerLinks, pillars, site } from '@/lib/site';
 
-// Same as the header: prefetch stays off until these routes exist.
 export function SiteFooter() {
   const year = new Date().getFullYear();
 
@@ -68,7 +67,6 @@ export function SiteFooter() {
             © {year} {site.name}.{' '}
             <Link
               href="/editorial-standards"
-              prefetch={false}
               className="text-link underline underline-offset-4"
             >
               How we work
@@ -102,7 +100,6 @@ function FooterLink({ href, children }: { href: string; children: React.ReactNod
     <li>
       <Link
         href={href}
-        prefetch={false}
         className="rounded-sm text-sm text-muted underline-offset-4 transition hover:text-content hover:underline"
       >
         {children}

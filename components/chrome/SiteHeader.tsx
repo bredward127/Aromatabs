@@ -4,9 +4,6 @@ import { Lockup } from '@/components/brand/Lockup';
 import { pillars } from '@/lib/site';
 import { ThemeToggle } from './ThemeToggle';
 
-// Prefetch is off on the topic links: their routes arrive with the content
-// model, and until then every page load would fire six 404s. Turn it back on
-// (delete the prop) once /[pillar] exists.
 export function SiteHeader() {
   return (
     <header className="border-b border-hairline bg-page">
@@ -20,7 +17,6 @@ export function SiteHeader() {
                 <li key={pillar.slug}>
                   <Link
                     href={`/${pillar.slug}`}
-                    prefetch={false}
                     className="rounded-sm text-sm text-muted underline-offset-8 transition hover:text-content hover:underline"
                   >
                     {pillar.name}
@@ -48,7 +44,6 @@ export function SiteHeader() {
               <li key={pillar.slug}>
                 <Link
                   href={`/${pillar.slug}`}
-                  prefetch={false}
                   className="inline-block whitespace-nowrap rounded-md px-3 py-2 text-sm text-muted transition hover:bg-surface hover:text-content"
                 >
                   {pillar.name}

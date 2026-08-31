@@ -36,9 +36,10 @@ identically everywhere.
 
 ## The site
 
-A Next.js App Router application lives alongside the kit. Prompt 1 of the
-super prompt is built: tokens, self-hosted type, layout primitives, the ripple
-motif, site chrome and the icon set.
+A Next.js App Router application lives alongside the kit. Prompts 1 and 2 of
+the super prompt are built: tokens, self-hosted type, layout primitives, the
+ripple motif and site chrome; then the taxonomy, the MDX content model, and the
+hub / cluster / article routes.
 
 ```bash
 npm install
@@ -46,12 +47,17 @@ npm run dev            # http://localhost:3000
 npm run check:all      # typecheck, lint, format, production build
 ```
 
-To verify the foundation end to end (three breakpoints x two themes, plus the
-theme cycle, focus order and the no-JavaScript fallback):
+Content lives in `content/<pillar>/<slug>.mdx` and is validated by zod at build
+time - a malformed file stops the build. See `content/README.md` for the schema
+and the citation rules.
+
+To verify the site end to end:
 
 ```bash
 npm run build && npx next start -p 3111
-npm run check:layout
+npm run check:layout      # 3 breakpoints x 2 themes, theme cycle, focus, no-JS
+npm run check:routes      # every route renders with the right breadcrumbs
+npm run check:citations   # every citation URL resolves (needs network access)
 ```
 
 The design tokens the app consumes are generated, not hand-written:
